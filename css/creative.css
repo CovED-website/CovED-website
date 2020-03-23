@@ -147,6 +147,36 @@ aside {
     padding: 0;
 }
 
+.nav-tabs{
+  font-family: 'Muli', sans-serif;
+  font-weight:600;
+  border-bottom:2px solid #F2BE32;
+}
+
+.nav-tabs>li{
+  margin-bottom: -2px;
+}
+
+.nav-tabs>li>a:hover,
+.nav-tabs>li>a:focus{
+  background-color: #F2BE32;
+  border:2px solid #F2BE32;
+  color: #000;
+}
+
+.nav-tabs>li.active>a{
+  border:2px solid #F2BE32;
+  border-bottom-color:transparent;
+  color: #000;
+}
+
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus{
+  border:2px solid #F2BE32;
+  color: #000;
+  border-bottom-color:transparent;
+}
+
 .navbar-default {
     border-color: rgba(255,255,255,0);
     font-family: 'Muli', sans-serif;
@@ -271,6 +301,11 @@ aside {
     color: #F2BE32;
 }
 
+
+.navbar-default2 .navbar-toggle .icon-bar{
+    background-color: #222;
+}
+
 /*color of menu items on phone screen when you DO NOT hover*/
 .navbar-default2 .nav > li>a,
 .navbar-default2 .nav>li>a:focus {
@@ -354,6 +389,7 @@ aside {
     .navbar-default2.affix .nav>li>a:focus:hover {
         color: #F2BE32;
     }
+
 }
 
 header {
